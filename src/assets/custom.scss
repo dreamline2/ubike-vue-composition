@@ -1,0 +1,94 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 10vw;
+  height: 100vh;
+}
+.half {
+  box-sizing: border-box;
+  width: 50%;
+  display: inline-block;
+}
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+#control-panel {
+  box-sizing: border-box;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  width: 300px;
+  background-color: rgba(228, 228, 228, 0.5);
+  font-size: 0;
+  padding: 10px;
+}
+#control-panel h2 {
+  text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
+  color: white;
+}
+#control-panel h3 {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  margin-left: 10px;
+  color: white;
+}
+#control-panel > .filter-district {
+  margin: 10px;
+}
+#control-panel > .filter-district span {
+  margin: 3px;
+}
+#control-panel > .filter-district label {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  width: 59px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: rgba(30, 30, 30, 0.3);
+  transition: .25s;
+  margin: 0;
+}
+#control-panel > .filter-district input[type="checkbox"] {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;  
+}
+#control-panel > .filter-district input[type="checkbox"]:checked + label {
+  color: white;
+  background-color: rgba(221, 24, 24, 0.5);
+  transition: .25s;
+}
+#control-panel > input {
+  box-sizing: border-box;
+  width: calc(100% - 10px);
+  border: none;
+  margin: 7px 5px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  padding: 0 10px;
+  border-radius: 3px;
+  color: white;
+  background-color: rgba(30, 30, 30, 0.3);
+  transition: .25s;
+}
+#control-panel > input:focus {
+  outline: none;
+  background-color: rgba(30, 30, 30, 0.5);
+  transition: .25s;
+}
+
+#control-panel .btn-secondary {
+  padding: 0;
+  background: transparent;
+  border: 0px;
+  vertical-align: initial;
+}
